@@ -42,7 +42,7 @@ getWeatherData = (city) => {
 showWeatherData = (weatherData) => {
   //CODE GOES HERE
   
-  document.getElementById("weather-type").innerText=weatherData.weather[0].description;
+  document.getElementById("weather-type").innerText=weatherData.weather[0].main;
   document.getElementById("city-name").innerText=weatherData.name;
   document.getElementById("temp").innerText=weatherData.main.temp;
   document.getElementById("min-temp").innerText=weatherData.main.temp_max;
